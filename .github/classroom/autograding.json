@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Compile and Run for Reading",
+      "setup": "",
+      "run": "make clean && make test < data.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Run Test",
+      "setup": "",
+      "run": "g++ -std=c++11 main.cpp && ./a.out < data.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Pytest for employee.txt",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest -rP",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
